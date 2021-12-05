@@ -30,14 +30,26 @@ print(myString.center(24, "*")) # *********hello**********
 
 str_01="#"
 print("\n",str_01.center(5,"-"),"\n",(3*str_01).center(5,"-"),"\n",(5*str_01).center(5,"-"),"\n",(3*str_01).center(5,"-"),"\n",(str_01).center(5,"-"))
-#
-#
-#
-#
-#
-#
-#
-#
+
+'''encode'''
+print("ç".encode("cp857"))
+string_01 = "pythön"
+
+print(string_01.encode("ascii","replace"))
+
+'''expandtabs'''
+
+mystring="xyz\tabc\t123"
+print(mystring.expandtabs())
+
+'''find & index'''
+
+mystring="hello"
+print(mystring.find("lo"), "position of lo is") # 3
+print(mystring.index("lo")) # 3
+
+print(mystring.rindex("o")) # 4
+
 astring = "Hello on StackOverflow"
 print(astring.find("w")) # 21
 
